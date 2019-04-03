@@ -56,9 +56,9 @@ $ yarn test
 * [Jest Api](https://facebook.github.io/jest/docs/en/api.html)
 
 ## Contributing
-Please read through our [contributing guidelines](https://github.com/joblocal/joblocal-client/blob/master/contributing.md). Included are directions for opening issues, coding standards, and feature requests.
+Please read through our [contributing guidelines](https://github.com/joblocal/api-client/blob/master/contributing.md). Included are directions for opening issues, coding standards, and feature requests.
 
 ## Authors
 * **Joblocal GmbH** - *Initial work* - [Joblocal](https://github.com/joblocal)
 
-See also the list of [contributors](https://github.com/joblocal/joblocal-client/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/joblocal/api-client/contributors) who participated in this project.
