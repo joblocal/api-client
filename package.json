@@ -1,5 +1,5 @@
 {
-  "name": "@joblocal/joblocal-client",
+  "name": "@joblocal/api-client",
   "version": "1.0.0",
   "description": "This repository provides an api-client to use the joblocal api.",
   "main": "./dist/index.js",

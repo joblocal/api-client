@@ -11,7 +11,7 @@ const config = {
   output: {
     filename: 'index.js',
     libraryTarget: 'umd',
-    library: 'joblocal-client',
+    library: 'api-client',
   },
 
   resolve: {

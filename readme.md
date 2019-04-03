@@ -1,4 +1,4 @@
-# Joblocal-Client
+# Joblocal Api-Client
 
 ![Downloads](https://img.shields.io/npm/dt/@joblocal\/api-client.svg)
 ![Size](https://img.shields.io/bundlephobia/min/@joblocal\/api-client.svg)
