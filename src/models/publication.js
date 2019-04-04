@@ -4,14 +4,11 @@ export default {
     publish_time: '',
     expire_time: '',
     boost_expire_time: '',
-    is_promoted: false,
+    is_promoted: null,
     geofence: null,
     update_time: null,
     create_time: null,
-    company: {
-      jsonApi: 'hasOne',
-      type: 'company',
-    },
+
     job: {
       jsonApi: 'hasOne',
       type: 'job',
