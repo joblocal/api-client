@@ -1,3 +1,3 @@
-import createClient from './client';
+const createClient = require('./client');
 
-export default createClient;
+module.exports = createClient;
