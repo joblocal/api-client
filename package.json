@@ -2,6 +2,10 @@
   "name": "@joblocal/api-client",
   "version": "1.1.1",
   "description": "This repository provides an api-client to use the joblocal api.",
+  "files": [
+    "dist",
+    "src"
+  ],
   "main": "./dist/index.js",
   "scripts": {
     "prebuild": "rm -rf dist && npm run validate",
