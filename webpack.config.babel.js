@@ -25,7 +25,7 @@ const config = {
   },
 
   resolve: {
-    extensions: ['.js', '.json'],
+    extensions: ['.js'],
     alias: {
       src: resolve('src'),
     },
