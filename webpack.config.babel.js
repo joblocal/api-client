@@ -9,9 +9,19 @@ const config = {
   entry: resolve('src/index.js'),
 
   output: {
+    path: resolve('dist'),
     filename: 'index.js',
-    libraryTarget: 'umd',
-    library: '@joblocal/api-client',
+    library: 'api-client',
+    libraryTarget: 'commonjs2',
+  },
+
+  externals: {
+    'devour-client': {
+      commonjs: 'devour-client',
+      commonjs2: 'devour-client',
+      amd: 'devour-client',
+      root: 'devour-client',
+    },
   },
 
   resolve: {
