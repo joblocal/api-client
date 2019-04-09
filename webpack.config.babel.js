@@ -16,12 +16,7 @@ const config = {
   },
 
   externals: {
-    'devour-client': {
-      commonjs: 'devour-client',
-      commonjs2: 'devour-client',
-      amd: 'devour-client',
-      root: 'devour-client',
-    },
+    'devour-client': 'devour-client',
   },
 
   resolve: {
