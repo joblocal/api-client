@@ -31,4 +31,19 @@ describe('api client definition', () => {
     expect(apiClient.models.publication.attributes)
       .toEqual(models.filter(model => model.name === 'publication')[0].attributes);
   });
+
+  test('to define ad-type model', () => {
+    expect(apiClient.models['ad-type'].attributes)
+      .toEqual(models.filter(model => model.name === 'ad-type')[0].attributes);
+  });
+
+  test('to define category model', () => {
+    expect(apiClient.models.category.attributes)
+      .toEqual(models.filter(model => model.name === 'category')[0].attributes);
+  });
+
+  test('to define subcategory model', () => {
+    expect(apiClient.models.subcategory.attributes)
+      .toEqual(models.filter(model => model.name === 'subcategory')[0].attributes);
+  });
 });

@@ -33,6 +33,18 @@ export default {
       jsonApi: 'hasOne',
       type: 'domain',
     },
+    'ad-type': {
+      jsonApi: 'hasOne',
+      type: 'ad-type',
+    },
+    category: {
+      jsonApi: 'hasOne',
+      type: 'category',
+    },
+    subcategory: {
+      jsonApi: 'hasOne',
+      type: 'subcategory',
+    },
     publications: {
       jsonApi: 'hasMany',
       type: 'publication',
