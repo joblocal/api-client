@@ -46,4 +46,15 @@ describe('api client definition', () => {
     expect(apiClient.models.subcategory.attributes)
       .toEqual(models.filter(model => model.name === 'subcategory')[0].attributes);
   });
+
+  test('to define user model', () => {
+    expect(
+      apiClient
+        .models
+        .user
+        .attributes,
+    ).toEqual(
+      models.filter(model => model.name === 'user')[0].attributes,
+    );
+  });
 });
