@@ -4,6 +4,7 @@ import publicationModel from './publication';
 import adTypeModel from './ad-type';
 import categoryModel from './category';
 import subCategoryModel from './subcategory';
+import user from './user';
 
 export default [
   domainModel,
@@ -12,4 +13,5 @@ export default [
   adTypeModel,
   categoryModel,
   subCategoryModel,
+  user,
 ];
