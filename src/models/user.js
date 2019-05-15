@@ -11,8 +11,8 @@ export default {
     banned_time: null,
   },
 
-  'companies': {
+  companies: {
     jsonApi: 'hasMany',
     type: 'companies',
-  }
-}
+  },
+};
