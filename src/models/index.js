@@ -5,6 +5,7 @@ import adTypeModel from './ad-type';
 import categoryModel from './category';
 import subCategoryModel from './subcategory';
 import user from './user';
+import companies from './companies';
 
 export default [
   domainModel,
@@ -14,4 +15,5 @@ export default [
   categoryModel,
   subCategoryModel,
   user,
+  companies,
 ];
