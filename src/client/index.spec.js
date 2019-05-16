@@ -57,4 +57,15 @@ describe('api client definition', () => {
       models.filter(model => model.name === 'user')[0].attributes,
     );
   });
+
+  test('to define companies model', () => {
+    expect(
+      apiClient
+        .models
+        .companies
+        .attributes,
+    ).toEqual(
+      models.filter(model => model.name === 'companies')[0].attributes,
+    );
+  });
 });
