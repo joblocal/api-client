@@ -4,8 +4,8 @@ import publicationModel from './publication';
 import adTypeModel from './ad-type';
 import categoryModel from './category';
 import subCategoryModel from './subcategory';
-import user from './user';
-import companies from './companies';
+import userModel from './user';
+import companyModel from './company';
 
 export default [
   domainModel,
@@ -14,6 +14,6 @@ export default [
   adTypeModel,
   categoryModel,
   subCategoryModel,
-  user,
-  companies,
+  userModel,
+  companyModel,
 ];

@@ -1,5 +1,5 @@
 export default {
-  name: 'companies',
+  name: 'company',
   id: '',
   attributes: {
     name: '',
