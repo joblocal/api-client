@@ -58,14 +58,14 @@ describe('api client definition', () => {
     );
   });
 
-  test('to define companies model', () => {
+  test('to define company model', () => {
     expect(
       apiClient
         .models
-        .companies
+        .company
         .attributes,
     ).toEqual(
-      models.filter(model => model.name === 'companies')[0].attributes,
+      models.filter(model => model.name === 'company')[0].attributes,
     );
   });
 });
