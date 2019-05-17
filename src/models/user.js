@@ -9,10 +9,9 @@ export default {
     domain_id: '',
     type: '',
     banned_time: null,
-  },
-
-  companies: {
-    jsonApi: 'hasMany',
-    type: 'companies',
+    companies: {
+      jsonApi: 'hasMany',
+      type: 'companies',
+    },
   },
 };
