@@ -3,5 +3,9 @@ export default {
   id: '',
   attributes: {
     name: '',
+    primaryDomain: {
+      jsonApi: 'hasOne',
+      type: 'domain',
+    },
   },
 };
