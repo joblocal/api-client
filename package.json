@@ -6,6 +6,10 @@
     "dist",
     "src"
   ],
+  "engines": {
+    "node": "^10.13.0",
+    "yarn": "^1.17.0"
+  },
   "main": "./dist/index.js",
   "scripts": {
     "prebuild": "rm -rf dist && npm run validate",
