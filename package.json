@@ -1,11 +1,15 @@
 {
   "name": "@joblocal/api-client",
-  "version": "1.4.5",
+  "version": "2.0.0",
   "description": "This repository provides an api-client to use the joblocal api.",
   "files": [
     "dist",
     "src"
   ],
+  "engines": {
+    "node": "^10.13.0",
+    "yarn": "^1.17.0"
+  },
   "main": "./dist/index.js",
   "scripts": {
     "prebuild": "rm -rf dist && npm run validate",
@@ -20,18 +24,19 @@
   "author": "Joblocal GmbH",
   "license": "ISC",
   "dependencies": {
-    "devour-client": "^2.0.15"
+    "devour-client": "^2.0.15",
+    "qs": "^6.8.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.4.3",
     "@babel/register": "^7.4.0",
-    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.7.0",
     "babel-loader": "^8.0.5",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-loader": "^2.1.2",
+    "eslint": "^6",
+    "eslint-config-airbnb-base": "^14",
+    "eslint-loader": "^3",
     "eslint-plugin-import": "^2.16.0",
     "git-hooks": "^1.1.10",
     "jest": "^24.7.0",

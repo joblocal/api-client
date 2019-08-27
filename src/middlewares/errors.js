@@ -12,7 +12,7 @@ const errorKey = (index, error) => {
   return index;
 };
 
-const mapError = error => ({
+const mapError = (error) => ({
   id: error.id,
   links: error.links,
   status: error.status,
