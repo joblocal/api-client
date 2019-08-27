@@ -20,7 +20,7 @@ export default function createClient({
   client.insertMiddlewareBefore('axios-request', awsApiGatewayMiddleware);
   client.insertMiddlewareBefore('axios-request', tokenAuthenticationMiddleware({ token }));
 
-  models.forEach(model => client.define(
+  models.forEach((model) => client.define(
     model.name,
     model.attributes,
   ));

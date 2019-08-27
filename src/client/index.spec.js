@@ -20,21 +20,21 @@ describe('middleware registration', () => {
 
   test('to register error middleware', () => {
     const middleware = client.middleware
-      .find(mw => mw.name === 'errors');
+      .find((mw) => mw.name === 'errors');
 
     expect(middleware).not.toBeNull();
   });
 
   test('to register auth middleware', () => {
     const middleware = client.middleware
-      .find(mw => mw.name === 'token-authentication');
+      .find((mw) => mw.name === 'token-authentication');
 
     expect(middleware).not.toBeNull();
   });
 
   test('to register api gateway middleware', () => {
     const middleware = client.middleware
-      .find(mw => mw.name === 'aws-api-gateway-param-flatten');
+      .find((mw) => mw.name === 'aws-api-gateway-param-flatten');
 
     expect(middleware).not.toBeNull();
   });
@@ -45,32 +45,32 @@ describe('api client definition', () => {
 
   test('to define domain model', () => {
     expect(apiClient.models.domain.attributes)
-      .toEqual(models.filter(model => model.name === 'domain')[0].attributes);
+      .toEqual(models.filter((model) => model.name === 'domain')[0].attributes);
   });
 
   test('to define job model', () => {
     expect(apiClient.models.job.attributes)
-      .toEqual(models.filter(model => model.name === 'job')[0].attributes);
+      .toEqual(models.filter((model) => model.name === 'job')[0].attributes);
   });
 
   test('to define publication model', () => {
     expect(apiClient.models.publication.attributes)
-      .toEqual(models.filter(model => model.name === 'publication')[0].attributes);
+      .toEqual(models.filter((model) => model.name === 'publication')[0].attributes);
   });
 
   test('to define ad-type model', () => {
     expect(apiClient.models['ad-type'].attributes)
-      .toEqual(models.filter(model => model.name === 'ad-type')[0].attributes);
+      .toEqual(models.filter((model) => model.name === 'ad-type')[0].attributes);
   });
 
   test('to define category model', () => {
     expect(apiClient.models.category.attributes)
-      .toEqual(models.filter(model => model.name === 'category')[0].attributes);
+      .toEqual(models.filter((model) => model.name === 'category')[0].attributes);
   });
 
   test('to define subcategory model', () => {
     expect(apiClient.models.subcategory.attributes)
-      .toEqual(models.filter(model => model.name === 'subcategory')[0].attributes);
+      .toEqual(models.filter((model) => model.name === 'subcategory')[0].attributes);
   });
 
   test('to define user model', () => {
@@ -80,7 +80,7 @@ describe('api client definition', () => {
         .user
         .attributes,
     ).toEqual(
-      models.filter(model => model.name === 'user')[0].attributes,
+      models.filter((model) => model.name === 'user')[0].attributes,
     );
   });
 
@@ -91,7 +91,7 @@ describe('api client definition', () => {
         .company
         .attributes,
     ).toEqual(
-      models.filter(model => model.name === 'company')[0].attributes,
+      models.filter((model) => model.name === 'company')[0].attributes,
     );
   });
 });

@@ -1,6 +1,6 @@
 import path from 'path';
 
-const resolve = file => path.resolve(__dirname, file);
+const resolve = (file) => path.resolve(__dirname, file);
 const isProd = process.argv.indexOf('-p') !== -1;
 
 const config = {

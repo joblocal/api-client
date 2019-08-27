@@ -19,10 +19,10 @@ const alphabeticalSort = (a, b) => a.localeCompare(b);
 
 export default {
   name: 'aws-api-gateway-param-flatten',
-  req: payload => Object.assign(payload, {
+  req: (payload) => Object.assign(payload, {
     req: {
       ...payload.req,
-      paramsSerializer: params => qs.stringify(
+      paramsSerializer: (params) => qs.stringify(
         recursiveParamFlatten(params),
         {
           arrayFormat: 'repeat',
