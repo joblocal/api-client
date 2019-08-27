@@ -24,12 +24,13 @@
   "author": "Joblocal GmbH",
   "license": "ISC",
   "dependencies": {
-    "devour-client": "^2.0.15"
+    "devour-client": "^2.0.15",
+    "qs": "^6.8.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.4.3",
     "@babel/register": "^7.4.0",
-    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.7.0",
     "babel-loader": "^8.0.5",
