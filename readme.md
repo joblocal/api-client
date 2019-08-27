@@ -22,26 +22,26 @@ Using npm:
 $ npm install @joblocal/api-client
 ```
 
-### Usage
+## Usage
 After installing the package you can use it as follows.
 
 ```javascript
 import createClient from '@joblocal/api-client';
 
-const client = createClient('jl-endpoint');
+const client = createClient({
+  url: 'https://api.joblocal.de/v4',
+  token: 'user_id_token' || null,
+});
 ```
 
-### Development
-#### Installing dependencies
-Run this command.
+## Development
 
+**Installing dependencies:**
 ```sh
 $ yarn install
 ```
 
-#### Test
-To make sure that the installation went fine. Run this command.
-
+**Verify by running tests:**
 ```sh
 $ yarn test
 ```
