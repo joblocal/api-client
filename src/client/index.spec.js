@@ -1,5 +1,6 @@
 import DevourClient from 'devour-client';
 import createClient from '.';
+
 import models from '../models';
 
 describe('api client', () => {
@@ -8,9 +9,34 @@ describe('api client', () => {
   });
 
   test('to set the api url correctly', () => {
-    const hostname = 'localhost';
-    const apiClient = createClient(hostname);
-    expect(apiClient.apiUrl).toEqual(hostname);
+    const url = 'localhost';
+    const apiClient = createClient({ url });
+    expect(apiClient.apiUrl).toEqual(url);
+  });
+});
+
+describe('middleware registration', () => {
+  const client = createClient();
+
+  test('to register error middleware', () => {
+    const middleware = client.middleware
+      .find(mw => mw.name === 'errors');
+
+    expect(middleware).not.toBeNull();
+  });
+
+  test('to register auth middleware', () => {
+    const middleware = client.middleware
+      .find(mw => mw.name === 'token-authentication');
+
+    expect(middleware).not.toBeNull();
+  });
+
+  test('to register api gateway middleware', () => {
+    const middleware = client.middleware
+      .find(mw => mw.name === 'aws-api-gateway-param-flatten');
+
+    expect(middleware).not.toBeNull();
   });
 });
 
