@@ -3,13 +3,17 @@ export default ({ token = null } = {}) => ({
   req: (payload) => {
     if (token === null) return payload;
 
+    const bearer = `Bearer ${(typeof token === 'function'
+      ? token()
+      : token)}`;
+
     return Object.assign(payload, {
       req: {
         ...payload.req,
         headers: {
           ...payload.headers,
-          Authorization: `Bearer ${token}`,
-          TOKEN: `Bearer ${token}`,
+          Authorization: bearer,
+          TOKEN: bearer,
         },
       },
     });
