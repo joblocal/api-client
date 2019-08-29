@@ -24,6 +24,13 @@ describe('token authentication middleware', () => {
     });
   });
 
+  test('to call token function if provided', () => {
+    const tokenFn = jest.fn();
+    tokenAuthenticationMiddleware({ token: tokenFn }).req(request);
+
+    expect(tokenFn).toHaveBeenCalled();
+  });
+
   test('to skip adding Authorization header', () => {
     const payload = tokenAuthenticationMiddleware().req(request);
     expect(payload).toEqual(request);
