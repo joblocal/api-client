@@ -11,7 +11,7 @@ export default ({ token = null } = {}) => ({
       req: {
         ...payload.req,
         headers: {
-          ...payload.headers,
+          ...payload.req.headers,
           Authorization: bearer,
           TOKEN: bearer,
         },
