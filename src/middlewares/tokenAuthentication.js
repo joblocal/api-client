@@ -1,10 +1,10 @@
 export default ({ token = null } = {}) => ({
   name: 'token-authentication',
-  req: (payload) => {
+  req: async (payload) => {
     if (token === null) return payload;
 
     const bearer = `Bearer ${(typeof token === 'function'
-      ? token()
+      ? await token()
       : token)}`;
 
     return Object.assign(payload, {
