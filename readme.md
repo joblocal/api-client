@@ -30,7 +30,10 @@ import createClient from '@joblocal/api-client';
 
 const client = createClient({
   url: 'https://api.joblocal.de/v4',
-  token: 'user_id_token' || () => 'id_token' || null,
+  token: 'user_id_token'
+    || () => 'id_token'
+    || async () => 'id_token'
+    || null,
 });
 ```
 
