@@ -2,6 +2,7 @@ export default {
   name: 'user',
   attributes: {
     salutation: '',
+    uuid: '',
     title: '',
     firstname: '',
     lastname: '',
