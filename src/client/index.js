@@ -10,9 +10,11 @@ import tokenAuthenticationMiddleware from '../middlewares/tokenAuthentication';
 export default function createClient({
   url = 'localhost',
   token = null,
+  logger = true,
 } = {}) {
   const client = new DevourClient({
     apiUrl: url,
+    logger,
   });
 
   client.replaceMiddleware('errors', errorMiddleware);
