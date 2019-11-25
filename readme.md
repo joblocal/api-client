@@ -19,7 +19,7 @@ $ yarn add @joblocal/api-client
 
 Using npm:
 ```sh
-$ npm install @joblocal/api-client
+$ npm install --save @joblocal/api-client
 ```
 
 ## Usage
