@@ -3,9 +3,10 @@ export default ({ token = null } = {}) => ({
   req: (payload) => {
     if (token === null) return payload;
 
-    const bearer = `Bearer ${(typeof token === 'function'
+    const myToken = typeof token === 'function'
       ? token()
-      : token)}`;
+      : token;
+    const bearer = myToken ? `Bearer ${myToken}` : '';
 
     return Object.assign(payload, {
       req: {
