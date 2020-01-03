@@ -11,8 +11,8 @@ describe('token authentication middleware', () => {
     expect(tokenAuthenticationMiddleware().name).toBe('token-authentication');
   });
 
-  test('to add Authorization header', () => {
-    const payload = tokenAuthenticationMiddleware({ token: 'test' }).req(request);
+  test('to add Authorization header', async () => {
+    const payload = await tokenAuthenticationMiddleware({ token: 'test' }).req(request);
 
     expect(payload).toEqual({
       req: {
@@ -31,8 +31,15 @@ describe('token authentication middleware', () => {
     expect(tokenFn).toHaveBeenCalled();
   });
 
-  test('to skip adding Authorization header', () => {
-    const payload = tokenAuthenticationMiddleware().req(request);
+  test('to call token function asynchronously if provided', async () => {
+    const tokenFn = jest.fn().mockResolvedValue('async fn');
+    const req = await tokenAuthenticationMiddleware({ token: tokenFn }).req(request);
+
+    expect(req.req.headers.TOKEN).toContain('async fn');
+  });
+
+  test('to skip adding Authorization header', async () => {
+    const payload = await tokenAuthenticationMiddleware().req(request);
     expect(payload).toEqual(request);
   });
 });
