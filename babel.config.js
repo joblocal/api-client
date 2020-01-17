@@ -1,19 +1,24 @@
-// eslint-disable-next-line func-names
-module.exports = function (api) {
+const isTest = process.env.NODE_ENV === 'test';
+
+module.exports = function create(api) {
   api.cache(true);
 
-  const presets = [
-    [
-      '@babel/preset-env',
-      {
-        targets: {
-          node: 'current',
-        },
-      },
-    ],
-  ];
-
   return {
-    presets,
+    presets: [
+      [
+        '@babel/preset-env',
+        isTest
+          ? {
+            targets: {
+              node: 'current',
+            },
+          }
+          : {
+            targets: {
+              browsers: ['last 2 versions', 'IE >= 11'],
+            },
+          },
+      ],
+    ],
   };
 };
