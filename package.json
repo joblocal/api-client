@@ -20,24 +20,24 @@
   "author": "Joblocal GmbH",
   "license": "ISC",
   "dependencies": {
-    "devour-client": "^2.0.15",
-    "qs": "^6.8.0"
+    "devour-client": "2.1.0",
+    "qs": "6.9.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/register": "^7.4.0",
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.7.0",
-    "babel-loader": "^8.0.5",
-    "eslint": "^6",
-    "eslint-config-airbnb-base": "^14",
-    "eslint-loader": "^3",
-    "eslint-plugin-import": "^2.16.0",
-    "git-hooks": "^1.1.10",
-    "jest": "^24.7.0",
-    "npm-run-all": "^4.1.5",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "@babel/core": "7.8.3",
+    "@babel/preset-env": "7.8.3",
+    "@babel/register": "7.8.3",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "24.9.0",
+    "babel-loader": "8.0.6",
+    "eslint": "6",
+    "eslint-config-airbnb-base": "14",
+    "eslint-loader": "3",
+    "eslint-plugin-import": "2.20.0",
+    "git-hooks": "1.1.10",
+    "jest": "24.9.0",
+    "npm-run-all": "4.1.5",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10"
   }
 }
