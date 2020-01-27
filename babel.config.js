@@ -1,13 +1,9 @@
-const isTest = process.env.NODE_ENV === 'test';
-
 module.exports = function create(api) {
-  api.cache(true);
-
   return {
     presets: [
       [
         '@babel/preset-env',
-        isTest
+        api.env('test')
           ? {
             targets: {
               node: 'current',
@@ -17,6 +13,8 @@ module.exports = function create(api) {
             targets: {
               browsers: ['last 2 versions', 'IE >= 11'],
             },
+            corejs: '3.6',
+            useBuiltIns: 'usage',
           },
       ],
     ],
