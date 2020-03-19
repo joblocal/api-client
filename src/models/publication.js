@@ -8,7 +8,10 @@ export default {
     geofence: null,
     update_time: null,
     create_time: null,
-
+    company: {
+      jsonApi: 'hasOne',
+      type: 'company',
+    },
     job: {
       jsonApi: 'hasOne',
       type: 'job',
