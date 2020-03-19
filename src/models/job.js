@@ -37,6 +37,10 @@ export default {
       jsonApi: 'hasOne',
       type: 'ad-type',
     },
+    education: {
+      jsonApi: 'hasOne',
+      type: 'education',
+    },
     category: {
       jsonApi: 'hasOne',
       type: 'category',
