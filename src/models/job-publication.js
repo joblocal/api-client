@@ -7,5 +7,9 @@ export default {
     updated_at: '',
     published_at: '',
     expired_at: '',
+    company: {
+      jsonApi: 'hasOne',
+      type: 'company',
+    },
   },
 };
