@@ -1,3 +1,4 @@
+import activeFlatrate from './active-flatrate';
 import adTypeModel from './ad-type';
 import applicationModel from './application';
 import benefitModel from './benefit';
@@ -28,6 +29,7 @@ import workExperienceModel from './work-experience';
 import workingTimesModel from './working-times';
 
 export default [
+  activeFlatrate,
   adTypeModel,
   applicationModel,
   benefitModel,
