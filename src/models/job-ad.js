@@ -11,11 +11,13 @@ export default {
     location: null,
     benefits: null,
     closing_text: null,
+    last_expired_publication_at: null,
     created_at: '',
     updated_at: '',
     application_method: null,
     locked: false,
     locked_by: null,
+    import_source: null,
     use_template: null,
 
     'job-publications': {
