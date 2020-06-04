@@ -24,6 +24,7 @@ import regionLandingpageModel from './region-landingpage';
 import searchAgentModel from './search-agent';
 import searchCompanyModel from './search-company';
 import subCategoryModel from './subcategory';
+import topJobModel from './top-job';
 import userModel from './user';
 import workExperienceModel from './work-experience';
 import workingTimesModel from './working-times';
@@ -55,6 +56,7 @@ export default [
   searchAgentModel,
   searchCompanyModel,
   subCategoryModel,
+  topJobModel,
   userModel,
   workExperienceModel,
   workingTimesModel,
