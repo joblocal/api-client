@@ -2,6 +2,7 @@ export default {
   name: 'company',
   id: '',
   attributes: {
+    domain_id: '',
     name: '',
     description: null,
     publication_count: 0,
