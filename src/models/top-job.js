@@ -10,14 +10,9 @@ export default {
     created_at: '',
     updated_at: '',
 
-    company: {
+    publication: {
       jsonApi: 'hasOne',
-      type: 'companies',
-    },
-
-    jobAd: {
-      jsonApi: 'hasOne',
-      type: 'job-ad',
+      type: 'job-publication',
     },
   },
 };
