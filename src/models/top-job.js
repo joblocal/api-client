@@ -9,5 +9,15 @@ export default {
     price: '',
     created_at: '',
     updated_at: '',
+
+    company: {
+      jsonApi: 'hasOne',
+      type: 'companies',
+    },
+
+    jobAd: {
+      jsonApi: 'hasOne',
+      type: 'job-ad',
+    },
   },
 };
