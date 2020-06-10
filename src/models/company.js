@@ -23,6 +23,7 @@ export default {
     banner_instructor_url: null,
     logo_profile_fb_url: null,
     company_is_public: false,
+    use_new_jobmanagement: false,
     domains: {
       jsonApi: 'hasMany',
       type: 'domain',
