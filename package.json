@@ -22,7 +22,7 @@
   "dependencies": {
     "@babel/runtime": "^7.8.3",
     "core-js": "3",
-    "devour-client": "2.1.1",
+    "devour-client": "2.1.0",
     "qs": "6.9.1"
   },
   "devDependencies": {
