@@ -12,7 +12,7 @@ const config = {
     path: resolve('dist'),
     filename: 'index.js',
     library: 'api-client',
-    libraryTarget: 'commonjs2',
+    libraryTarget: 'umd',
   },
 
   externals: {
