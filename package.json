@@ -1,6 +1,6 @@
 {
   "name": "@joblocal/api-client",
-  "version": "2.6.3",
+  "version": "2.6.4",
   "description": "This repository provides an api-client to use the joblocal api.",
   "files": [
     "dist",
