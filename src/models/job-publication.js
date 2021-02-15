@@ -6,6 +6,7 @@ export default {
     domain_id: '',
     published_at: '',
     inside_geofence: '',
+    is_single: '',
     expired_at: '',
     created_at: '',
     updated_at: '',
