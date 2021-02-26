@@ -7,6 +7,7 @@ export default {
     published_at: '',
     inside_geofence: '',
     is_single: '',
+    use_contingent: '',
     expired_at: '',
     created_at: '',
     updated_at: '',
