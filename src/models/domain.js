@@ -24,6 +24,9 @@ export default {
     hide_result_count: null,
     show_startpage_video_gallery: null,
     company_slider_auto_rotate: null,
+    seo_preview: false,
+    use_job_search: true,
+    use_extra_boost: true,
     address: {
       street: '',
       zipcode: '',
