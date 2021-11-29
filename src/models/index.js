@@ -10,6 +10,7 @@ import customLandingpageModel from './custom-landingpage';
 import domainModel from './domain';
 import educationModel from './education';
 import employmentTypeModel from './employment-type';
+import professionModel from './profession';
 import featureModel from './feature';
 import industryModel from './industry';
 import jobAdModel from './job-ad';
@@ -42,6 +43,7 @@ export default [
   domainModel,
   educationModel,
   employmentTypeModel,
+  professionModel,
   featureModel,
   industryModel,
   jobAdModel,
