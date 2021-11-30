@@ -38,6 +38,11 @@ export default {
       type: 'employment_types',
     },
 
+    professions: {
+      jsonApi: 'hasMany',
+      type: 'professions',
+    },
+
     qualifications: {
       jsonApi: 'hasMany',
       type: 'qualifications',
