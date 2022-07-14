@@ -1,11 +1,13 @@
 export default {
   name: 'contact',
   attributes: {
+    company_id: null,
     salutation: null,
     title: null,
     firstname: null,
     lastname: null,
     job: null,
+    occupation: null,
     department: null,
     responsibility: null,
     email: null,
@@ -14,6 +16,11 @@ export default {
     fax: null,
     profile: false,
     image_url: null,
+    show_in_company_profile: false,
+    street: '',
+    zipcode: '',
+    city: '',
+    country: '',
     address: {
       street: '',
       zipcode: '',
