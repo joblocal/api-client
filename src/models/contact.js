@@ -21,6 +21,7 @@ export default {
     zipcode: '',
     city: '',
     country: '',
+    image_uuid: '',
     address: {
       street: '',
       zipcode: '',
