@@ -1,5 +1,7 @@
 # Joblocal Api-Client
 
+This v4 API is deprecated! Please use the v5 client instead: https://github.com/joblocal/api-client-v5
+
 ![Downloads](https://img.shields.io/npm/dt/@joblocal\/api-client.svg)
 ![Size](https://img.shields.io/bundlephobia/min/@joblocal\/api-client.svg)
 ![Zipped Size](https://img.shields.io/bundlephobia/minzip/@joblocal\/api-client.svg)
