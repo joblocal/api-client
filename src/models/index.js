@@ -24,6 +24,7 @@ import qualificationModel from './qualification';
 import regionLandingpageModel from './region-landingpage';
 import searchAgentModel from './search-agent';
 import searchCompanyModel from './search-company';
+import socialMediaLinkModel from './social-media-link';
 import subCategoryModel from './subcategory';
 import topJobModel from './top-job';
 import userModel from './user';
@@ -57,6 +58,7 @@ export default [
   regionLandingpageModel,
   searchAgentModel,
   searchCompanyModel,
+  socialMediaLinkModel,
   subCategoryModel,
   topJobModel,
   userModel,
