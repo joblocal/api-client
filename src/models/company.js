@@ -24,45 +24,61 @@ export default {
     logo_profile_fb_url: null,
     company_is_public: false,
     use_new_jobmanagement: false,
-    domains: {
+    'active-flatrates': {
       jsonApi: 'hasMany',
-      type: 'domain',
-    },
-    primaryDomain: {
-      jsonApi: 'hasOne',
-      type: 'domain',
-    },
-    subscriptions: {
-      jsonApi: 'hasMany',
-      type: 'subscription',
-    },
-    contacts: {
-      jsonApi: 'hasMany',
-      type: 'contact',
-    },
-    industry: {
-      jsonApi: 'hasOne',
-      type: 'industry',
-    },
-    'parent-company': {
-      jsonApi: 'hasOne',
-      type: 'company',
-    },
-    'child-companies': {
-      jsonApi: 'hasMany',
-      type: 'company',
-    },
-    'main-contact': {
-      jsonApi: 'hasOne',
-      type: 'contact',
+      type: 'active-flatrate',
     },
     benefits: {
       jsonApi: 'hasMany',
       type: 'benefit',
     },
-    'active-flatrates': {
+    'child-companies': {
       jsonApi: 'hasMany',
-      type: 'active-flatrate',
+      type: 'company',
+    },
+    contacts: {
+      jsonApi: 'hasMany',
+      type: 'contact',
+    },
+    domains: {
+      jsonApi: 'hasMany',
+      type: 'domain',
+    },
+    employers: {
+      jsonApi: 'hasMany',
+      type: 'user',
+    },
+    industry: {
+      jsonApi: 'hasOne',
+      type: 'industry',
+    },
+    jobs: {
+      jsonApi: 'hasMany',
+      type: 'job',
+    },
+    'main-contact': {
+      jsonApi: 'hasOne',
+      type: 'contact',
+    },
+    'parent-company': {
+      jsonApi: 'hasOne',
+      type: 'company',
+    },
+    primaryDomain: {
+      jsonApi: 'hasOne',
+      type: 'domain',
+    },
+    publications: {
+      jsonApi: 'hasMany',
+      type: 'publication',
+    },
+    socialMediaLinks: {
+      jsonApi: 'hasMany',
+      type: 'social-media-link',
+    },
+    subscriptions: {
+      jsonApi: 'hasMany',
+      type: 'subscription',
     },
   },
 };
