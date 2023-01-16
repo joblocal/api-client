@@ -7,6 +7,7 @@ export default {
     introduction: null,
     responsibilities: null,
     requirements: null,
+    reference_id: null,
     salary: null,
     location: null,
     benefits: null,
