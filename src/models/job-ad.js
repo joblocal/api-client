@@ -1,42 +1,31 @@
 export default {
   name: 'job-ad',
   attributes: {
-    status: null,
     title: '',
-    url_slug: '',
-    introduction: null,
-    responsibilities: null,
-    requirements: null,
-    reference_id: null,
-    salary: null,
-    location: null,
-    benefits: null,
-    closing_text: null,
-    last_expired_publication_at: null,
+    reference_id: '',
+    company_id: '',
+    contact_id: '',
     created_at: '',
     updated_at: '',
+    introduction: '',
+    responsibilities: '',
+    requirements: '',
+    benefits: '',
+    salary: '',
+    url_slug: '',
+    closing_text: '',
+    locked: '',
+    location: {},
+    location_formatted: '',
     application_method: null,
-    locked: false,
-    locked_by: null,
+    header_image_id: null,
+    canonical_link: null,
+    content_order: null,
     import_source: null,
-    use_template: null,
-
-    'job-publications': {
+    last_expired_publication_at: null,
+    publications: {
       jsonApi: 'hasMany',
       type: 'job-publications',
-    },
-
-    working_times: {
-      jsonApi: 'hasMany',
-      type: 'working_times',
-      meta: {
-        hours_per_week: null,
-      },
-    },
-
-    employment_types: {
-      jsonApi: 'hasMany',
-      type: 'employment_types',
     },
 
     professions: {
@@ -46,12 +35,17 @@ export default {
 
     qualifications: {
       jsonApi: 'hasMany',
-      type: 'qualifications',
+      type: 'qualification',
     },
 
-    company: {
-      jsonApi: 'hasOne',
-      type: 'companies',
+    employment_types: {
+      jsonApi: 'hasMany',
+      type: 'employment_types',
+    },
+
+    working_times: {
+      jsonApi: 'hasMany',
+      type: 'working_times',
     },
 
     contact: {
@@ -61,6 +55,21 @@ export default {
 
     header_image: {
       jsonApi: 'hasOne',
+      type: 'media',
+    },
+
+    company: {
+      jsonApi: 'hasOne',
+      type: 'companies',
+    },
+
+    pictures: {
+      jsonApi: 'hasMany',
+      type: 'media',
+    },
+
+    videos: {
+      jsonApi: 'hasMany',
       type: 'media',
     },
   },

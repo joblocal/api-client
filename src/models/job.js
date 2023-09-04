@@ -1,13 +1,16 @@
 export default {
   name: 'job',
   attributes: {
+    company_id: '',
     title: '',
     description: '',
-    display_description: null,
+    display_description: true,
     requirements: null,
     update_time: null,
     create_time: null,
     is_imported: null,
+    contains_empty_paragraphs: false,
+    job_ad_id: null,
     collective_account: {
       company: null,
       publisher: null,
@@ -28,18 +31,22 @@ export default {
       lng: 0,
     },
     image_url: '',
-
+    canonical_link: null,
     domain: {
       jsonApi: 'hasOne',
       type: 'domain',
     },
-    'ad-type': {
-      jsonApi: 'hasOne',
-      type: 'ad-type',
+    publications: {
+      jsonApi: 'hasMany',
+      type: 'publication',
     },
-    education: {
+    company: {
       jsonApi: 'hasOne',
-      type: 'education',
+      type: 'company',
+    },
+    contact: {
+      jsonApi: 'hasOne',
+      type: 'contact',
     },
     category: {
       jsonApi: 'hasOne',
@@ -49,9 +56,33 @@ export default {
       jsonApi: 'hasOne',
       type: 'subcategory',
     },
-    publications: {
-      jsonApi: 'hasMany',
-      type: 'publication',
+    'ad-type': {
+      jsonApi: 'hasOne',
+      type: 'ad-type',
+    },
+    'job-type': {
+      jsonApi: 'hasOne',
+      type: 'job-type',
+    },
+    'contract-type': {
+      jsonApi: 'hasOne',
+      type: 'contract-type',
+    },
+    qualification: {
+      jsonApi: 'hasOne',
+      type: 'qualification',
+    },
+    'work-experience': {
+      jsonApi: 'hasOne',
+      type: 'work-experience',
+    },
+    video: {
+      jsonApi: 'hasOne',
+      type: 'video',
+    },
+    'description-video': {
+      jsonApi: 'hasOne',
+      type: 'description-video',
     },
   },
 };
