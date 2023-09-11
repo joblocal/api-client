@@ -16,5 +16,10 @@ export default {
       jsonApi: 'hasOne',
       type: 'job-ad',
     },
+
+    'top-jobs': {
+      jsonApi: 'hasMany',
+      type: 'top-jobs',
+    },
   },
 };

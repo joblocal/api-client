@@ -5,6 +5,7 @@ export default {
     filename: null,
     id: null,
     status: null,
+    description: null,
     type: null,
     url: null,
     created_at: null,

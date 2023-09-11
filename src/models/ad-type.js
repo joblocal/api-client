@@ -3,5 +3,9 @@ export default {
   attributes: {
     name: '',
     sort: 0,
+    'search-landingpages': {
+      jsonApi: 'hasOne',
+      type: 'search-landingpage',
+    },
   },
 };
